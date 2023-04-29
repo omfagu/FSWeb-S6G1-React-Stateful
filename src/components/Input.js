@@ -34,6 +34,7 @@ ADIM 6:
 */
 
 import React from 'react'; /* ADIM 0 */
+import React, {useState} from 'react';
 
 export default function Input() {
   /* ADIM 1 */

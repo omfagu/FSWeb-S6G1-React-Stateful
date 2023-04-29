@@ -2,7 +2,7 @@
   "name": "fsweb-s6g1-react-stateful",
   "version": "0.0.1",
   "scripts": {
-    "start": "parcel src/index.html",
+    "start": "parcel src/index.html -p 10323",
     "build": "parcel build src/index.html",
     "test": "cypress open"
   },

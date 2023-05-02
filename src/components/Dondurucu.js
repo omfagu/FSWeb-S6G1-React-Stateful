@@ -34,17 +34,14 @@ ADIM 4:
   Bu click handlerın, "açık olup olmadığını" şu anda olduğunun tersi olacak şekilde ayarlayarak döndürücüyü değiştirmesi gerekir.
   "not" için kullandığımız operatörü hatırlıyor musunuz??
 */
-
 import React, {useState} from 'react'; /* STEP 0 */
 
+
 export default function Dondurucu() {
-/* ADIM 1 */
-const [döndürücüAçık, setDöndürücüAçık] = useState(true);
-
-
+const [döndürücüAçık,setdöndürücüAcik]=useState(true)
 
   const toggleDondurucu = () => {
-  /* ADIM 4 */
+    setdöndürücüAcik(!döndürücüAçık)
   };
 
   return (
@@ -54,7 +51,7 @@ const [döndürücüAçık, setDöndürücüAçık] = useState(true);
         döndürücüAçık && <div id='döndürücü' className='spinner'>--+--</div> /* ADIM 2 */
       }
       <button id='toggleDondurucu' onClick={toggleDondurucu}>
-      {döndürücüAçık ? 'Gizle' : 'Göster'}
+       {döndürücüAçık===true?"Gizle":"Göster"}
       </button>
     </div>
   );
